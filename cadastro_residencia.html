@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastrar residência - Residencial Aurora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/cadastro_residencia.css">
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">P</div>
+        <div class="brand-text">
+          <div class="brand-name">Residencial Aurora</div>
+          <div class="brand-sub">Estacionamento</div>
+        </div>
+      </div>
+
+      <nav class="menu" aria-label="Menu principal">
+        <a href="vagas_listagem.html" class="menu-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="3"></rect>
+            <path d="M9 7v10M9 7h3a3 3 0 0 1 0 6H9"></path>
+          </svg>
+          Listagem de Vagas
+        </a>
+
+        <a href="cadastro_vaga.html" class="menu-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="3"></rect>
+            <path d="M12 8v8M8 12h8"></path>
+          </svg>
+          Cadastrar Vaga
+        </a>
+
+        <a href="veiculos_listagem.html" class="menu-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 17h14l1-6-2-5H6l-2 5 1 6Z"></path>
+            <path d="M4 11h16M7 17v2M17 17v2"></path>
+            <circle cx="7.5" cy="14" r="1"></circle>
+            <circle cx="16.5" cy="14" r="1"></circle>
+          </svg>
+          Listagem de Veículos
+        </a>
+
+        <a href="cadastro_veiculo.html" class="menu-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 17h14l1-6-2-5H6l-2 5 1 6Z"></path>
+            <path d="M4 11h16M7 17v2M17 17v2M12 2v5M9.5 4.5h5"></path>
+          </svg>
+          Cadastrar Veículo
+        </a>
+
+        <a href="residencias_listagem.html" class="menu-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m3 10 9-7 9 7"></path>
+            <path d="M5 9v11h14V9"></path>
+            <path d="M9 20v-7h6v7"></path>
+          </svg>
+          Listagem de Residências
+        </a>
+
+        <a href="cadastro_residencia.html" class="menu-link menu-link--ativo" aria-current="page">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m3 10 9-7 9 7"></path>
+            <path d="M5 9v11h14V9"></path>
+            <path d="M9 20v-7h6v7"></path>
+            <path d="M18 3v6M15 6h6"></path>
+          </svg>
+          Cadastrar Residência
+        </a>
+
+        <a href="minha_conta.html" class="menu-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="m19.4 15 .1.1 1.4 1.1-1.4 2.4-1.7-.7a8 8 0 0 1-1.8 1l-.3 1.8h-2.8l-.3-1.8a8 8 0 0 1-1.8-1l-1.7.7-1.4-2.4 1.4-1.1a8 8 0 0 1 0-2l-1.4-1.1 1.4-2.4 1.7.7a8 8 0 0 1 1.8-1l.3-1.8h2.8l.3 1.8a8 8 0 0 1 1.8 1l1.7-.7 1.4 2.4-1.4 1.1a8 8 0 0 1 0 2Z"></path>
+          </svg>
+          Minha Conta
+        </a>
+      </nav>
+
+      <div class="user">
+        <div class="user-info">
+          <div class="user-avatar">AD</div>
+          <div class="user-nome">Administração</div>
+        </div>
+        <a href="login.html" class="user-sair">Sair</a>
+      </div>
+    </aside>
+
+    <main class="conteudo">
+      <header class="topo">
+        <div class="topo-titulo">
+          <h1>Cadastrar residência</h1>
+          <p>Preencha as informações abaixo para adicionar uma residência ao condomínio.</p>
+        </div>
+      </header>
+
+      <section class="formulario-container" aria-labelledby="titulo-formulario">
+        <div class="formulario-cabecalho">
+          <div class="formulario-icone" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m3 10 9-7 9 7"></path>
+              <path d="M5 9v11h14V9"></path>
+              <path d="M9 20v-7h6v7"></path>
+            </svg>
+          </div>
+          <div>
+            <h2 id="titulo-formulario">Informações da residência</h2>
+            <p>Os campos marcados com <span class="obrigatorio">*</span> são obrigatórios.</p>
+          </div>
+        </div>
+
+        <form id="form-residencia" class="formulario" action="#" method="post" novalidate>
+          <div id="sucesso" class="aviso aviso--sucesso campo--largura-total" role="status" hidden>
+            Residência cadastrada com sucesso.
+            <a href="residencias_listagem.html">Ver listagem</a>
+          </div>
+
+          <div class="campo">
+            <label for="apto">Número do apartamento <span class="obrigatorio">*</span></label>
+            <input type="text" id="apto" name="apto" placeholder="Ex.: 101" inputmode="numeric" maxlength="4" autocomplete="off" required aria-describedby="erro-apto">
+            <small>Apenas números, até 4 dígitos.</small>
+            <span id="erro-apto" class="campo-erro" role="alert"></span>
+          </div>
+
+          <div class="campo">
+            <label for="bloco">Bloco <span class="obrigatorio">*</span></label>
+            <select id="bloco" name="bloco" required aria-describedby="erro-bloco">
+              <option value="" selected disabled>Selecione o bloco</option>
+              <option value="A">Bloco A</option>
+              <option value="B">Bloco B</option>
+              <option value="C">Bloco C</option>
+            </select>
+            <span id="erro-bloco" class="campo-erro" role="alert"></span>
+          </div>
+
+          <div class="campo">
+            <label for="responsavel">Responsável <span class="obrigatorio">*</span></label>
+            <input type="text" id="responsavel" name="responsavel" placeholder="Nome completo do responsável" autocomplete="off" required aria-describedby="erro-responsavel">
+            <span id="erro-responsavel" class="campo-erro" role="alert"></span>
+          </div>
+
+          <div class="campo">
+            <label for="moradores">Nº de moradores <span class="obrigatorio">*</span></label>
+            <input type="number" id="moradores" name="moradores" value="1" min="1" max="20" required aria-describedby="erro-moradores">
+            <span id="erro-moradores" class="campo-erro" role="alert"></span>
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" inputmode="numeric" autocomplete="off" aria-describedby="erro-telefone">
+            <span id="erro-telefone" class="campo-erro" role="alert"></span>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@exemplo.com" autocomplete="off" aria-describedby="erro-email">
+            <span id="erro-email" class="campo-erro" role="alert"></span>
+          </div>
+
+          <div class="campo">
+            <label for="status">Status da residência <span class="obrigatorio">*</span></label>
+            <select id="status" name="status" required>
+              <option value="ativa" selected>Ativa</option>
+              <option value="inativa">Inativa</option>
+            </select>
+          </div>
+
+          <div class="campo campo--largura-total">
+            <label for="observacoes">Observações</label>
+            <textarea id="observacoes" name="observacoes" rows="4" placeholder="Adicione alguma informação relevante sobre a residência..."></textarea>
+          </div>
+
+          <div class="formulario-acoes campo--largura-total">
+            <a href="residencias_listagem.html" class="botao botao--secundario">Cancelar</a>
+            <button type="submit" class="botao botao--primario">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+              Cadastrar residência
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/cadastro_residencia.js"></script>
+</body>
+</html>
