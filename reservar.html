@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar vaga - Residencial Aurora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reservar.css">
+    <script src="js/reservar.js" defer></script>
+</head>
+
+<body>
+    <div class="app">
+
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-logo">P</div>
+                <div class="brand-text">
+                    <div class="brand-name">Residencial Aurora</div>
+                    <div class="brand-sub">Estacionamento</div>
+                </div>
+            </div>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="vagas_listagem.html" class="menu-link">
+                    Listagem de Vagas
+                </a>
+
+                <a href="reservar.html" class="menu-link menu-link--ativo" aria-current="page">
+                    Reservar Vaga
+                </a>
+
+                <a href="veiculos_listagem.html" class="menu-link">
+                    Listagem de Veículos
+                </a>
+
+                <a href="cadastro_veiculo.html" class="menu-link">
+                    Cadastrar Veículo
+                </a>
+
+                <a href="residencias_listagem.html" class="menu-link">
+                    Listagem de Residências
+                </a>
+
+                <a href="cadastro_residencia.html" class="menu-link">
+                    Cadastrar Residência
+                </a>
+
+                <a href="minha_conta.html" class="menu-link">
+                    Minha Conta
+                </a>
+            </nav>
+
+            <div class="user">
+                <div class="user-info">
+                    <div class="user-avatar">AD</div>
+                    <div class="user-nome">Administração</div>
+                </div>
+                <a href="login.html" class="user-sair">Sair</a>
+            </div>
+        </aside>
+
+        <main class="conteudo">
+
+            <header class="topo">
+                <div class="topo-titulo">
+                    <h1>Reservar vaga</h1>
+                    <p>Preencha os dados do proprietário, veículo e vaga desejada.</p>
+                </div>
+            </header>
+
+            <section class="formulario-container">
+
+                <div class="formulario-cabecalho">
+                    <div class="formulario-icone">P</div>
+
+                    <div>
+                        <h2>Informações da reserva</h2>
+                        <p>Os campos marcados com * são obrigatórios.</p>
+                    </div>
+                </div>
+
+                <form id="form-reserva" class="formulario">
+
+                    <div class="campo">
+                        <label for="placa">Placa do veículo *</label>
+                        <input
+                            type="text"
+                            id="placa"
+                            name="placa"
+                            placeholder="Ex.: ABC1D23"
+                            maxlength="7"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="proprietario">Nome do proprietário *</label>
+                        <input
+                            type="text"
+                            id="proprietario"
+                            name="proprietario"
+                            placeholder="Nome completo"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="apartamento">Número do apartamento *</label>
+                        <input
+                            type="text"
+                            id="apartamento"
+                            name="apartamento"
+                            placeholder="Ex.: 101"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="bloco">Bloco *</label>
+                        <input
+                            type="text"
+                            id="bloco"
+                            name="bloco"
+                            placeholder="Ex.: Bloco A"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="modelo">Modelo do veículo *</label>
+                        <input
+                            type="text"
+                            id="modelo"
+                            name="modelo"
+                            placeholder="Ex.: Toyota Corolla"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="cor">Cor do veículo *</label>
+                        <input
+                            type="text"
+                            id="cor"
+                            name="cor"
+                            placeholder="Ex.: Prata"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo campo--largura-total">
+                        <label for="vaga">Número da vaga *</label>
+                        <input
+                            type="text"
+                            id="vaga"
+                            name="vaga"
+                            placeholder="Ex.: V-01"
+                            required
+                        >
+                    </div>
+
+                    <div class="formulario-acoes campo--largura-total">
+                        <a href="vagas_listagem.html" class="botao botao--secundario">
+                            Cancelar
+                        </a>
+
+                        <button type="submit" class="botao botao--primario">
+                            Salvar reserva
+                        </button>
+                    </div>
+
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
