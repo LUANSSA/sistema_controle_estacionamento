@@ -1,0 +1,119 @@
+/* Ajustes exclusivos da listagem de veículos.
+   Depende de vagas_listagem.css (layout, menu, filtros, grade). */
+
+/* Filtros + busca lado a lado */
+.filtros-grupo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.busca {
+  height: 40px;
+  width: 280px;
+  border: 1px solid #CBD5E1;
+  border-radius: 999px;
+  padding: 0 18px;
+  background: #FFFFFF;
+  color: #0F172A;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.busca::placeholder { color: #64748B; }
+
+.busca:focus-visible {
+  outline: 2px solid #2563EB;
+  outline-offset: 2px;
+}
+
+/* Card de veículo */
+.veiculo {
+  min-height: 160px;
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-radius: 14px;
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.veiculo-cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.veiculo-placa {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Selo do tipo (reaproveita .selo da base) */
+.veiculo .selo--carro {
+  background: #E8EFFE;
+  color: #1E40AF;
+}
+
+.veiculo .selo--moto {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.veiculo-dados {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.veiculo-modelo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.veiculo-modelo svg { flex: none; color: #475569; }
+.veiculo-modelo span { color: #475569; font-weight: 500; }
+
+.veiculo-morador { font-size: 14px; }
+.veiculo-morador span { color: #475569; }
+
+/* Rodapé com a vaga */
+.veiculo-vaga {
+  border-top: 1px solid #E3E8F0;
+  padding-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.veiculo-vaga .vaga-badge {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #DCFCE7;
+  color: #166534;
+}
+
+.veiculo-vaga .vaga-badge--sem {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+/* Nenhum resultado */
+.vazio {
+  grid-column: 1 / -1;
+  padding: 48px 16px;
+  text-align: center;
+  font-size: 15px;
+  color: #475569;
+  background: #FFFFFF;
+  border: 1px dashed #CBD5E1;
+  border-radius: 14px;
+}
