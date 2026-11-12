@@ -1,183 +1,214 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservar vaga - Residencial Aurora</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/reservar.css">
-    <script src="js/reservar.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservar vaga - Residencial Aurora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reservar.css">
 </head>
-
 <body>
-    <div class="app">
+  <div class="app">
 
-        <aside class="sidebar">
-            <div class="brand">
-                <div class="brand-logo">P</div>
-                <div class="brand-text">
-                    <div class="brand-name">Residencial Aurora</div>
-                    <div class="brand-sub">Estacionamento</div>
-                </div>
-            </div>
+    <!-- Menu de navegação -->
+    <aside class="sidebar">
+      <!-- Título -->
+      <div class="brand">
+        <div class="brand-logo">P</div>
+        <div class="brand-text">
+          <div class="brand-name">Residencial Aurora</div>
+          <div class="brand-sub">Estacionamento</div>
+        </div>
+      </div>
 
-            <nav class="menu" aria-label="Menu principal">
-                <a href="vagas_listagem.html" class="menu-link">
-                    Listagem de Vagas
-                </a>
+      <!-- Navegação -->
+      <nav class="menu" aria-label="Menu principal">
 
-                <a href="reservar.html" class="menu-link menu-link--ativo" aria-current="page">
-                    Reservar Vaga
-                </a>
+        <!-- Reservar Vaga -->
+        <a href="reservar.html" class="menu-link menu-link--ativo" aria-current="page">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="3"></rect>
+            <path d="M12 8v8M8 12h8"></path>
+          </svg>
+          Reservar Vaga
+        </a>
 
-                <a href="veiculos_listagem.html" class="menu-link">
-                    Listagem de Veículos
-                </a>
+        <!-- Listagem de vagas -->
+        <a href="listagem_vaga.html" class="menu-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="3"></rect>
+            <path d="M9 7v10M9 7h3a3 3 0 0 1 0 6H9"></path>
+          </svg>
+            Vagas
+        </a>
 
-                <a href="cadastro_veiculo.html" class="menu-link">
-                    Cadastrar Veículo
-                </a>
+        <!-- Listagem de veículos -->
+        <a href="listagem_veiculo.html" class="menu-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 17h14l1-6-2-5H6l-2 5 1 6Z"></path>
+            <path d="M4 11h16M7 17v2M17 17v2"></path>
+            <circle cx="7.5" cy="14" r="1"></circle>
+            <circle cx="16.5" cy="14" r="1"></circle>
+          </svg>
+          Veículos
+        </a>
 
-                <a href="residencias_listagem.html" class="menu-link">
-                    Listagem de Residências
-                </a>
+        <!-- Listagem de residências -->
+        <a href="listagem_residencia.html" class="menu-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m3 10 9-7 9 7"></path>
+            <path d="M5 9v11h14V9"></path>
+            <path d="M9 20v-7h6v7"></path>
+          </svg>
+          Residências
+        </a>
 
-                <a href="cadastro_residencia.html" class="menu-link">
-                    Cadastrar Residência
-                </a>
+        <!-- Minha Conta -->
+        <a href="minha_conta.html" class="menu-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 21a8 8 0 0 1 16 0"></path>
+          </svg>
+          Minha Conta
+        </a>
+      </nav>
 
-                <a href="minha_conta.html" class="menu-link">
-                    Minha Conta
-                </a>
-            </nav>
+      <!-- Administração -->
+      <div class="user">
+        <div class="user-info">
+          <div class="user-avatar">AD</div>
+          <div class="user-nome">Administração</div>
+        </div>
 
-            <div class="user">
-                <div class="user-info">
-                    <div class="user-avatar">AD</div>
-                    <div class="user-nome">Administração</div>
-                </div>
-                <a href="login.html" class="user-sair">Sair</a>
-            </div>
-        </aside>
+        <!-- Sair -->
+        <a href="login.html" class="user-sair">Sair</a>
+      </div>
+    </aside>
 
-        <main class="conteudo">
+    <main class="conteudo">
+      <header class="topo">
+        <div class="topo-titulo">
+          <h1>Reservar vaga</h1>
+          <p>Preencha os dados do proprietário, do veículo e da vaga desejada.</p>
+        </div>
+      </header>
+      
+      <section class="formulario-container" aria-labelledby="titulo-formulario">
+        <div class="formulario-cabecalho">
+          <div class="formulario-icone" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="3"></rect>
+              <path d="M9 7v10M9 7h3a3 3 0 0 1 0 6H9"></path>
+            </svg>
+          </div>
+          <div>
+            <h2 id="titulo-formulario">Informações da reserva</h2>
+            <p>Os campos marcados com <span class="obrigatorio">*</span> são obrigatórios.</p>
+          </div>
+        </div>
 
-            <header class="topo">
-                <div class="topo-titulo">
-                    <h1>Reservar vaga</h1>
-                    <p>Preencha os dados do proprietário, veículo e vaga desejada.</p>
-                </div>
-            </header>
+        <!-- Formlário -->
+        <form id="form-reserva" class="formulario" action="#" method="post" novalidate>
+          <!-- Placa de veículo -->
+          <div class="campo">
+            <label for="placa">Placa do veículo <span class="obrigatorio">*</span></label>
+            <input type="text" id="placa" name="placa" placeholder="Ex.: ABC1D23" maxlength="7" autocomplete="off" required aria-describedby="dica-placa erro-placa">
+            <small id="dica-placa">Padrão antigo (ABC1234) ou Mercosul (ABC1D23).</small>
+            <span id="erro-placa" class="campo-erro" role="alert"></span>
+          </div>
 
-            <section class="formulario-container">
+          <!-- Nome do proprietário -->
+          <div class="campo">
+            <label for="proprietario">Nome do proprietário <span class="obrigatorio">*</span></label>
+            <input type="text" id="proprietario" name="proprietario" placeholder="Nome completo" autocomplete="off" required aria-describedby="erro-proprietario">
+            <span id="erro-proprietario" class="campo-erro" role="alert"></span>
+          </div>  
 
-                <div class="formulario-cabecalho">
-                    <div class="formulario-icone">P</div>
+          <!-- Número de apartamentos -->
+          <div class="campo">
+            <label for="apartamento">Número do apartamento <span class="obrigatorio">*</span></label>
+            <input type="text" id="apartamento" name="apartamento" placeholder="Ex.: 101" inputmode="numeric" maxlength="4" autocomplete="off" required aria-describedby="erro-apartamento">
+            <span id="erro-apartamento" class="campo-erro" role="alert"></span>
+          </div>
 
-                    <div>
-                        <h2>Informações da reserva</h2>
-                        <p>Os campos marcados com * são obrigatórios.</p>
-                    </div>
-                </div>
+          <!-- Blocos -->
+          <div class="campo">
+            <label for="bloco">Bloco <span class="obrigatorio">*</span></label>
+            <select id="bloco" name="bloco" required aria-describedby="erro-bloco">
+              <option value="" selected disabled>Selecione o bloco</option>
+              <option value="A">Bloco A</option>
+              <option value="B">Bloco B</option>
+              <option value="C">Bloco C</option>
+            </select>
+            <span id="erro-bloco" class="campo-erro" role="alert"></span>
+          </div>
 
-                <form id="form-reserva" class="formulario">
+          <!-- Modelo de veículo -->
+          <div class="campo">
+            <label for="modelo">Modelo do veículo <span class="obrigatorio">*</span></label>
+            <input type="text" id="modelo" name="modelo" placeholder="Ex.: Toyota Corolla" autocomplete="off" required aria-describedby="erro-modelo">
+            <span id="erro-modelo" class="campo-erro" role="alert"></span>
+          </div>
 
-                    <div class="campo">
-                        <label for="placa">Placa do veículo *</label>
-                        <input
-                            type="text"
-                            id="placa"
-                            name="placa"
-                            placeholder="Ex.: ABC1D23"
-                            maxlength="7"
-                            required
-                        >
-                    </div>
+          <!-- Cor do veículo -->
+          <div class="campo">
+            <label for="cor">Cor do veículo <span class="obrigatorio">*</span></label>
+            <input type="text" id="cor" name="cor" placeholder="Ex.: Prata" autocomplete="off" required aria-describedby="erro-cor">
+            <span id="erro-cor" class="campo-erro" role="alert"></span>
+          </div>
 
-                    <div class="campo">
-                        <label for="proprietario">Nome do proprietário *</label>
-                        <input
-                            type="text"
-                            id="proprietario"
-                            name="proprietario"
-                            placeholder="Nome completo"
-                            required
-                        >
-                    </div>
+          <!-- Vaga -->
+          <div class="campo campo--largura-total">
+            <label for="vaga">Vaga <span class="obrigatorio">*</span></label>
+            <select id="vaga" name="vaga" required aria-describedby="dica-vaga erro-vaga"></select>
+            <small id="dica-vaga"></small>
+            <span id="erro-vaga" class="campo-erro" role="alert"></span>
+          </div>
 
-                    <div class="campo">
-                        <label for="apartamento">Número do apartamento *</label>
-                        <input
-                            type="text"
-                            id="apartamento"
-                            name="apartamento"
-                            placeholder="Ex.: 101"
-                            required
-                        >
-                    </div>
+          <!-- Salvar reserva  -->
+          <div class="formulario-acoes campo--largura-total">
+            <a href="listagem_vaga.html" class="botao botao--secundario">Cancelar</a>
+            <button type="submit" class="botao botao--primario">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6 9 17l-5-5"></path>
+              </svg>
+              Salvar reserva
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
 
-                    <div class="campo">
-                        <label for="bloco">Bloco *</label>
-                        <input
-                            type="text"
-                            id="bloco"
-                            name="bloco"
-                            placeholder="Ex.: Bloco A"
-                            required
-                        >
-                    </div>
+  <!-- Modal de confirmação -->
+  <dialog id="modal-reserva" class="modal" aria-labelledby="modal-titulo">
+    <div class="modal-conteudo">
+      <div class="modal-icone" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6 9 17l-5-5"></path>
+        </svg>
+      </div>
+      <h2 id="modal-titulo">Reserva realizada!</h2>
+      <p class="modal-sub">Confira os dados da sua reserva abaixo.</p>
 
-                    <div class="campo">
-                        <label for="modelo">Modelo do veículo *</label>
-                        <input
-                            type="text"
-                            id="modelo"
-                            name="modelo"
-                            placeholder="Ex.: Toyota Corolla"
-                            required
-                        >
-                    </div>
+      <dl class="modal-dados">
+        <div><dt>Data e hora</dt><dd id="m-data"></dd></div>
+        <div><dt>Vaga</dt><dd id="m-vaga"></dd></div>
+        <div><dt>Placa</dt><dd id="m-placa"></dd></div>
+        <div><dt>Veículo</dt><dd id="m-veiculo"></dd></div>
+        <div><dt>Proprietário</dt><dd id="m-proprietario"></dd></div>
+        <div><dt>Residência</dt><dd id="m-residencia"></dd></div>
+      </dl>
 
-                    <div class="campo">
-                        <label for="cor">Cor do veículo *</label>
-                        <input
-                            type="text"
-                            id="cor"
-                            name="cor"
-                            placeholder="Ex.: Prata"
-                            required
-                        >
-                    </div>
-
-                    <div class="campo campo--largura-total">
-                        <label for="vaga">Número da vaga *</label>
-                        <input
-                            type="text"
-                            id="vaga"
-                            name="vaga"
-                            placeholder="Ex.: V-01"
-                            required
-                        >
-                    </div>
-
-                    <div class="formulario-acoes campo--largura-total">
-                        <a href="vagas_listagem.html" class="botao botao--secundario">
-                            Cancelar
-                        </a>
-
-                        <button type="submit" class="botao botao--primario">
-                            Salvar reserva
-                        </button>
-                    </div>
-
-                </form>
-            </section>
-        </main>
+      <div class="modal-acoes">
+        <button type="button" id="modal-fechar" class="botao botao--primario">Fechar</button>
+      </div>
     </div>
+  </dialog>
+
+  <!-- Javascript -->
+  <script src="js/reservar.js"></script>
 </body>
 </html>
