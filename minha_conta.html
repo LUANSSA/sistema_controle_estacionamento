@@ -12,7 +12,9 @@
 <body>
   <div class="app">
 
+    <!-- Menu de navegação -->
     <aside class="sidebar">
+      <!-- Título -->
       <div class="brand">
         <div class="brand-logo">P</div>
         <div class="brand-text">
@@ -21,75 +23,66 @@
         </div>
       </div>
 
+      <!-- Navegação -->
       <nav class="menu" aria-label="Menu principal">
-        <a href="vagas_listagem.html" class="menu-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="3" y="3" width="18" height="18" rx="3"></rect>
-            <path d="M9 7v10M9 7h3a3 3 0 0 1 0 6H9"></path>
-          </svg>
-          Listagem de Vagas
-        </a>
 
-        <a href="cadastro_vaga.html" class="menu-link">
+        <!-- Reservar Vaga -->
+        <a href="reservar.html" class="menu-link" aria-current="page">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <rect x="3" y="3" width="18" height="18" rx="3"></rect>
             <path d="M12 8v8M8 12h8"></path>
           </svg>
-          Cadastrar Vaga
+          Reservar Vaga
         </a>
 
-        <a href="veiculos_listagem.html" class="menu-link">
+        <!-- Listagem de vagas -->
+        <a href="listagem_vaga.html" class="menu-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="3"></rect>
+            <path d="M9 7v10M9 7h3a3 3 0 0 1 0 6H9"></path>
+          </svg>
+            Vagas
+        </a>
+
+        <!-- Listagem de veículos -->
+        <a href="listagem_veiculo.html" class="menu-link">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M5 17h14l1-6-2-5H6l-2 5 1 6Z"></path>
             <path d="M4 11h16M7 17v2M17 17v2"></path>
             <circle cx="7.5" cy="14" r="1"></circle>
             <circle cx="16.5" cy="14" r="1"></circle>
           </svg>
-          Listagem de Veículos
+          Veículos
         </a>
 
-        <a href="cadastro_veiculo.html" class="menu-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M5 17h14l1-6-2-5H6l-2 5 1 6Z"></path>
-            <path d="M4 11h16M7 17v2M17 17v2M12 2v5M9.5 4.5h5"></path>
-          </svg>
-          Cadastrar Veículo
-        </a>
-
-        <a href="residencias_listagem.html" class="menu-link">
+        <!-- Listagem de residências -->
+        <a href="listagem_residencia.html" class="menu-link">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="m3 10 9-7 9 7"></path>
             <path d="M5 9v11h14V9"></path>
             <path d="M9 20v-7h6v7"></path>
           </svg>
-          Listagem de Residências
+          Residências
         </a>
 
-        <a href="cadastro_residencia.html" class="menu-link">
+        <!-- Minha Conta -->
+        <a href="minha_conta.html" class="menu-link menu-link--ativo">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="m3 10 9-7 9 7"></path>
-            <path d="M5 9v11h14V9"></path>
-            <path d="M9 20v-7h6v7"></path>
-            <path d="M18 3v6M15 6h6"></path>
-          </svg>
-          Cadastrar Residência
-        </a>
-
-        <a href="minha_conta.html" class="menu-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="3"></circle>
-            <path d="m19.4 15 .1.1 1.4 1.1-1.4 2.4-1.7-.7a8 8 0 0 1-1.8 1l-.3 1.8h-2.8l-.3-1.8a8 8 0 0 1-1.8-1l-1.7.7-1.4-2.4 1.4-1.1a8 8 0 0 1 0-2l-1.4-1.1 1.4-2.4 1.7.7a8 8 0 0 1 1.8-1l.3-1.8h2.8l.3 1.8a8 8 0 0 1 1.8 1l1.7-.7 1.4 2.4-1.4 1.1a8 8 0 0 1 0 2Z"></path>
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 21a8 8 0 0 1 16 0"></path>
           </svg>
           Minha Conta
         </a>
       </nav>
 
+      <!-- Administração -->
       <div class="user">
-        <!-- O bloco do usuário leva para a tela Minha conta -->
-        <a href="minha_conta.html" class="user-info user-info--ativo" aria-current="page" title="Minha conta">
-          <div id="menu-avatar" class="user-avatar">AD</div>
-          <div id="menu-nome" class="user-nome">Administração</div>
-        </a>
+        <div class="user-info">
+          <div class="user-avatar">AD</div>
+          <div class="user-nome">Administração</div>
+        </div>
+
+        <!-- Sair -->
         <a href="login.html" class="user-sair">Sair</a>
       </div>
     </aside>

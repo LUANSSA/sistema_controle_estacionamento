@@ -18,5 +18,5 @@ btnEntrar.addEventListener('click', () => {
 
 
 function redirecionar(){
-  window.location.href = "./vagas_listagem.html"
+  window.location.href = "./listagem_vaga.html"
 }
