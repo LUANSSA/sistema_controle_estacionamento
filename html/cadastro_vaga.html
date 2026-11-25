@@ -9,9 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/cadastro_vaga.css">
 </head>
+
 <body>
   <div class="app">
-
     <!-- Menu de navegação -->
     <aside class="sidebar">
       <!-- Título -->
@@ -86,7 +86,10 @@
         <a href="login.html" class="user-sair">Sair</a>
       </div>
     </aside>
+
     <main class="conteudo">
+
+      <!-- Título da página -->
       <header class="topo">
         <div class="topo-titulo">
           <h1>Cadastrar vaga</h1>
@@ -94,6 +97,7 @@
         </div>
       </header>
 
+      <!-- Sessão do fomulário -->
       <section class="formulario-container" aria-labelledby="titulo-formulario">
         <div class="formulario-cabecalho">
           <div class="formulario-icone" aria-hidden="true">
@@ -102,23 +106,29 @@
               <path d="M12 8v8M8 12h8"></path>
             </svg>
           </div>
+          <!-- Título do formulário -->
           <div>
             <h2 id="titulo-formulario">Informações da vaga</h2>
             <p>Os campos marcados com <span class="obrigatorio">*</span> são obrigatórios.</p>
           </div>
         </div>
 
+        <!-- Formulário de vaga -->
         <form id="form-vaga" class="formulario" action="#" method="post">
+
+          <!-- Número de identificação da vaga -->
           <div class="campo">
             <label for="numero">Número ou identificação da vaga <span class="obrigatorio">*</span></label>
             <input type="text" id="numero" name="numero" placeholder="Ex.: V-01" required>
           </div>
 
+          <!-- Bloco -->
           <div class="campo">
             <label for="bloco">Bloco</label>
             <input type="text" id="bloco" name="bloco" placeholder="Ex.: Bloco A">
           </div>
 
+          <!-- Andar / nível -->
           <div class="campo">
             <label for="andar">Andar / nível <span class="obrigatorio">*</span></label>
             <select id="andar" name="andar" required>
@@ -131,22 +141,24 @@
             </select>
           </div>
 
+          <!-- Tipo de caga -->
           <div class="campo">
             <label for="tipo">Tipo de vaga <span class="obrigatorio">*</span></label>
             <select id="tipo" name="tipo" required>
               <option value="" selected disabled>Selecione o tipo</option>
               <option value="carro">Carro</option>
               <option value="moto">Motocicleta</option>
-              <option value="pcd">Acessível (PCD)</option>
               <option value="visitante">Visitante</option>
             </select>
           </div>
 
+          <!-- Localização -->
           <div class="campo">
             <label for="localizacao">Localização / referência</label>
             <input type="text" id="localizacao" name="localizacao" placeholder="Ex.: Próximo ao elevador">
           </div>
 
+          <!-- Status inicial -->
           <div class="campo">
             <label for="status">Status inicial <span class="obrigatorio">*</span></label>
             <select id="status" name="status" required>
@@ -154,13 +166,15 @@
               <option value="ocupada">Ocupada</option>
               <option value="manutencao">Em manutenção</option>
             </select>
-          </div>
+          </div>  
 
+          <!-- Observações -->
           <div class="campo campo--largura-total">
             <label for="observacoes">Observações</label>
             <textarea id="observacoes" name="observacoes" rows="4" placeholder="Adicione alguma informação relevante sobre esta vaga..."></textarea>
-          </div>
+          </div>  
 
+          <!-- Cadastrar ou cancelar -->
           <div class="formulario-acoes campo--largura-total">
             <a href="reservar.html" class="botao botao--secundario">Cancelar</a>
             <button type="submit" class="botao botao--primario">
