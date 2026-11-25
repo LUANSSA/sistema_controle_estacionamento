@@ -16,7 +16,8 @@ form.addEventListener("submit", async (evento) =>{
         tipo: document.getElementById("tipo").value,
         localizacao: document.getElementById("localizacao").value,
         status: document.getElementById("status").value,
-        observacoes: document.getElementById("observacoes").value 
+        observacoes: document.getElementById("observacoes").value,
+        pcd: document.getElementById("pcd").value
     }
 
     try {
